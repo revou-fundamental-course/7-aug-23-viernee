@@ -1,0 +1,74 @@
+body {
+    justify-content: center;
+    background: #FFF6DC;
+    color: #000000;
+}
+.judul{
+    background-color: #C4C1A4;
+    text-align: center;
+    padding: 2%;
+    margin: 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.gmbrsegitiga {
+    text-align: center;
+    padding: 1%;
+}
+
+h2{
+    background-color: #C4C1A4;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+h3{
+    margin: 0px;
+    text-align: center;
+}
+
+button {
+    flex-direction: row;
+    margin: 20px;
+    height: 30px;
+    width: 80px;
+    background-color: #C4C1A4;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+button:hover {background-color: #a4a076}
+
+button:active {
+  background-color: #a4a076;
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
+}
+   
+#keterangan {
+    padding-bottom: 1%;
+}
+    
+.perhitungan {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+    
+input {
+    width: 100%;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+.hasilkeliling{
+    margin-bottom: 50px;
+}
+.hasilluas{
+    margin-bottom: 50px;
+}
+

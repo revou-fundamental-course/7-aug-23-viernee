@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="css/style.css">
+        </head>
+        <body>
+            <div class="judul">
+                <h1>Kalkulator Segitiga</h1>
+                Sebuah web sederhana yang berfungsi untuk menghitung luas dan keliling bangun segitiga
+            </div>
+
+            <div class="gmbrsegitiga">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Triangle.TrigArea.svg/1024px-Triangle.TrigArea.svg.png"alt="Ini gambar segitiga" width="200" height="200"/>
+            </div>
+            
+            <h2>Luas Segitiga</h2>
+            <div class="luas">
+                <h3>L = 1/2 x a x t</h3>
+                <div id="keterangan">
+                    <h4>Keterangan:</h4>
+                    <ul>
+                        <li>L = Luas Segitiga</li>
+                        <li>a = Alas Segitiga (disimbolkan dengan b pada gambar)</li>
+                        <li>t = Tinggi Segitiga (disimbolkan dengan h pada gambar)</li>
+                    </ul>
+                </div>
+                <div class="perhitungan">
+                    <div class="inputalas">
+                        <p>Berapa panjang alas segitiga?</p>
+                        <input type="number" id="alas"/> 
+                    </div>
+                    <div class="inputtinggi">
+                        <p>Berapa panjang tinggi segitiga?</p> 
+                        <input type="number" id="tinggi"/>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" onclick="countluas()">Hitung</button>
+            <button type="reset" onclick="resetluas()">Reset</button>
+            <p id="hasilluas"></p>
+
+            <h2>Keliling Segitiga</h2>
+            <div class="keliling">
+                <h3>K = AB + BC + AC</h3>
+                <div id="keterangan">
+                    <h4>Keterangan:</h4>
+                    <ul>
+                        <li>K = Keliling Segitiga</li>
+                        <li>AB = Sisi 1 Segitiga</li>
+                        <li>BC = Sisi 2 Segitiga</li>
+                        <li>AC = Sisi 3 Segitiga</li>
+                    </ul>
+                </div>
+                <div class="perhitungan">
+                    <div class="inputAB">
+                        <p>Berapa panjang sisi 1 segitiga?</p>
+                        <input type="number" id="AB"/> <br/>
+                    </div>
+                    <div class="inputBC">
+                        <p>Berapa panjang sisi 2 segitiga?</p> 
+                        <input type="number" id="BC"/>
+                    </div>
+                    <div class="inputAC">
+                        <p>Berapa panjang sisi 3 segitiga?</p> 
+                        <input type="number" id="AC"/>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" onclick="countkeliling()">Hitung</button>
+            <button type="reset" onclick="resetkeliling()">Reset</button>
+            <p id="hasilkeliling"></p>
+
+            <script src="js/script.js"></script>
+        </body>
+</html>
